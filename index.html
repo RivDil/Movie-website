@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PremierCup</title>
+    <link rel="stylesheet" href="./styles/app.css">
+    <script src="https://kit.fontawesome.com/1684884964.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=DM+Sans:wght@400;500;700&family=Dosis:wght@300;600&family=Inter:wght@300;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="headerContainer">
+        <nav id="nav">
+            <figure id="nav-logo"><i class="fa-solid fa-clapperboard"></i><img src="" alt=""></figure>
+            <section id="nav-searchbar">
+                <span id="nav-searchbar--logo"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" id="nav-searchbar--input" class="inactive" placeholder="Search">
+            </section>
+        </nav>
+        <section id="slideshow">
+            <figure id="slideshowContainer-img">
+                <div class="mySlides fade">
+                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yjtvXD7FyjQSLqvatkY0y1CNazR.jpg" alt="" class="slideshow-img">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7DklulAcixqUCTpQcxMusrUWmAL.jpg" alt="" class="slideshow-img">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u7Ulem8hT8nKVPvYlTeNLoWXfvk.jpg" alt="" class="slideshow-img"> 
+                </div>
+                <div id="slideshow-btn">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </figure>
+        </section>
+    </header>
+    <main id="mainContainer">
+        <section id="trendingPreview">
+            <div id="trendingPreview-header">
+                <h2 id="trendingPreview-header--title">Trending</h2>
+                <button id="trendinPreview-header--btn">&#10095;</button>
+            </div>
+
+            <article class="trendingPreview-movieList">
+                
+            </article>
+        </section>
+        <section id="categoriesPreview" class="categoriesPreview-container">
+            <h2 class="categoriesPreview-title">Categorías</h2>
+            <article class="categoriesPreview-list">
+
+                <!-- <div class="category-container">
+                    <h3 id="id28" class="category-title">Romance</h3>
+                </div> -->
+
+            </article>
+        </section>
+        <section id="genericList" class="genericList-container inactive">
+            <div class="movie-container">
+                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
+            </div>
+            <div class="movie-container">
+                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
+            </div>
+            <div class="movie-container">
+                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
+            </div>
+        </section>
+        <section id="movieDetail" class="movieDetail-container inactive">
+            <h1 class="movieDetail-title">The Northman</h1> 
+            <span class="movieDetail-score">8.5</span>
+            <p class="movieDetail-description">
+                Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.
+            </p>
+            <article class="categories-list">
+                <div class="category-container">
+                  <h3 id="id28" class="category-title">Romance</h3>
+                </div>
+          
+                <div class="category-container">
+                  <h3 id="id16" class="category-title">Horror</h3>
+                </div>
+          
+                <div class="category-container">
+                  <h3 id="id14" class="category-title">Action</h3>
+                </div>
+              </article>
+          
+              <article class="relatedMovies-container">
+                <h2 class="relatedMovies-title">Similar Movies</h2>
+          
+                <div class="relatedMovies-scrollContainer">
+                  <div class="movie-container">
+                    <img
+                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                      class="movie-img"
+                      alt="Nombre de la película"
+                    />
+                  </div>
+                  
+                  <div class="movie-container">
+                    <img
+                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                      class="movie-img"
+                      alt="Nombre de la película"
+                    />
+                  </div>
+                  
+                  <div class="movie-container">
+                    <img
+                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                      class="movie-img"
+                      alt="Nombre de la película"
+                    />
+                  </div>
+                </div>
+              </article>
+        </section>
+    </main>
+    
+    <footer>RivDil</footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/slideshow.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
+</body>
+</html>
