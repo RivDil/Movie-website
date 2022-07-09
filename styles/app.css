@@ -18,6 +18,17 @@ nav{
     font-size: 1.8rem;
     background-color: var(--purple-background);
 }
+#nav-searchbar--input{
+    width: 80%;
+    margin: 20px 0 10px 20px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: #81689f;
+}
+#nav-searchbar--input::placeholder{
+    color: white;
+}
 .mySlides{
     width: 100%;
     height: 100%;
@@ -25,6 +36,10 @@ nav{
 #headerContainer{
     width: 100%;
 
+}
+.header-title--categoryView{
+    color: black;
+    margin: 20px 0 10px 20px;
 }
 #slideshow{
     position: relative;
@@ -61,6 +76,7 @@ nav{
 main{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 #trendingPreview-header{
     position:relative;
@@ -93,7 +109,7 @@ main{
 }
 .categoriesPreview-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fill, minmax(150px, 1fr) );
     gap: 2px;
 }
 
@@ -105,24 +121,96 @@ main{
     margin: 10px 10px 5px 10px;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: black;
+    background-color: rgb(155, 100, 161);
     cursor: pointer;
     width: 80%;
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
+    box-shadow: 5px 5px 15px -9px #000000;
+}
+#arrowbtn{
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
 }
 .categoriesPreview-title{
     margin-left: 15px;
+    padding-top: 10px;
 }
-.genericList-container{
-    display: flex;
+#long-img{
     width: 100%;
-    height: 100%;
+}
+.title-movie{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#movieDetail{
+    position: absolute;
+    top: -20px;
+    color: white;
+    background-color: var(--purple-background);
+    border-radius: 20px;
+    width: 100vw;
+}
+.relatedMovies-scrollContainer {
+    position: absolute;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-bottom: 10px;
+    white-space: nowrap;
+    width: 100vw;
+    padding-bottom: 16px;
+  }
+  .relatedMovies-scrollContainer .movie-container {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .relatedMovies-scrollContainer .movie-img {
+    width: 125px;
+    min-width: 125px;
+    max-width: 125px;
+    height: 187.5px;
+    min-height: 187.5px;
+    max-height: 187.5px;
+  }
+.title-movie span{
+    margin-right: 10px;
 }
-
+.movieDetail-description{
+    padding: 15px 10px;
+}
+.genericList-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat( auto-fill, minmax(150px, 1fr) );
+    margin-top: 15px;
+}
+#genericList .movie-container .movie-img{
+    margin: 0 auto;
+    height: 200px;
+    width: 130px;
+}
+.movie-container{
+    margin: 0 auto;
+}
+#movieDetail .categories-list{
+    display: flex;
+    overflow-x: scroll;
+}
+.relatedMovies-title{
+    text-align: start;
+    margin: 10px 0 10px 10px;
+}
+footer{
+    color: var(--purple-background);
+    font-weight: bolder;
+    text-align: center;
+}
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;

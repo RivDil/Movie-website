@@ -4,7 +4,8 @@ const trendingPreviewSection = document.querySelector('#trendingPreview');
 const categoriesPreviewSection = document.querySelector('#categoriesPreview');
 const genericSection = document.querySelector('#genericList');
 const movieDetailSection = document.querySelector('#movieDetail');
-
+const headerLong = document.querySelector('#header-container--long');
+const trendingPreviewLong = document.querySelector('#trendingPreview-long');
 // Lists & Containers
 const slideshow = document.querySelector('#slideshow')
 const searchForm = document.querySelector('#nav-searchbar');
@@ -14,12 +15,16 @@ const movieDetailCategoriesList = document.querySelector('#movieDetail .categori
 const relatedMoviesContainer = document.querySelector('.relatedMovies-scrollContainer');
 
 // Elements
-const headerCategoryTitle = document.querySelector('.header-title--categoryView')
+const longImg = document.querySelector('#long-img');
+const trendingPreviewLongList = document.querySelector('#trendingPreview-movieList-long');
+const trendinPreviewHeaderBtnLong = document.querySelector('#trendinPreview-header--btn-long');
+const searchIcon =document.querySelector('#nav-searchbar--logo');
+const headerCategoryTitle = document.querySelector('.header-title--categoryView');
 const headerLogo = document.querySelector('#nav-logo');
 const arrowBtn = document.querySelector('#arrowbtn');
 
 const searchFormInput = document.querySelector('#nav-searchbar--input');
-const searchFormBtn = document.querySelector('#nav-searchbar--logo');
+const searchFormBtn = document.querySelector('#searchBtn');
 
 const trendingBtn = document.querySelector('#trendinPreview-header--btn');
 

@@ -14,14 +14,20 @@
 <body>
     <header id="headerContainer">
         <nav id="nav">
-            <button id="arrowbtn">Arrow</button>
-            <h1 class="header-title header-title--categoryView inactive">Accion</h1>
+            <button id="arrowbtn">&#10094;</button>
             <figure id="nav-logo"><i class="fa-solid fa-clapperboard"></i><img src="" alt=""></figure>
             <section id="nav-searchbar">
-                <span id="nav-searchbar--logo"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" id="nav-searchbar--input" class="inactive" placeholder="Search">
+              <span id="nav-searchbar--logo"><i class="fa-solid fa-magnifying-glass"></i></span>
             </section>
-        </nav>
+          </nav>
+          <section class="search-main">
+            <input type="text" id="nav-searchbar--input" class="inactive" placeholder="Search">
+            <button id="searchBtn">pisa</button>
+          </section>
+        <h1 class="header-title header-title--categoryView inactive">Accion</h1>
+        <div id="header-container--long">
+          <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yjtvXD7FyjQSLqvatkY0y1CNazR.jpg" alt="movie photo" id="long-img">
+        </div>
         <section id="slideshow">
             <figure id="slideshowContainer-img">
                 <div class="mySlides fade">
@@ -62,19 +68,14 @@
             </article>
         </section>
         <section id="genericList" class="genericList-container inactive">
-            <div class="movie-container">
-                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
-            </div>
-            <div class="movie-container">
-                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
-            </div>
-            <div class="movie-container">
-                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="" class="movie-img">
-            </div>
+
         </section>
         <section id="movieDetail" class="movieDetail-container inactive">
-            <h1 class="movieDetail-title">The Northman</h1> 
-            <span class="movieDetail-score">8.5</span>
+            <div class="title-movie">
+              <h1 class="movieDetail-title">The Northman</h1> 
+              <span class="movieDetail-score">8.5</span>
+
+            </div>
             <p class="movieDetail-description">
                 Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.
             </p>
