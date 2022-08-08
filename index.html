@@ -22,28 +22,20 @@
           </nav>
           <section class="search-main">
             <input type="text" id="nav-searchbar--input" class="inactive" placeholder="Search">
-            <button id="searchBtn">pisa</button>
+            <button id="searchBtn" class="inactive">pisa</button>
           </section>
         <h1 class="header-title header-title--categoryView inactive">Accion</h1>
-        <div id="header-container--long">
-          <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yjtvXD7FyjQSLqvatkY0y1CNazR.jpg" alt="movie photo" id="long-img">
+        <div id="header-container--long" class="skeleton">
+          <img src="" alt="movie photo" id="long-img">
         </div>
         <section id="slideshow">
-            <figure id="slideshowContainer-img">
-                <div class="mySlides fade">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yjtvXD7FyjQSLqvatkY0y1CNazR.jpg" alt="" class="slideshow-img">
-                </div>
-                <div class="mySlides fade">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7DklulAcixqUCTpQcxMusrUWmAL.jpg" alt="" class="slideshow-img">
-                </div>
-                <div class="mySlides fade">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u7Ulem8hT8nKVPvYlTeNLoWXfvk.jpg" alt="" class="slideshow-img"> 
-                </div>
-                <div id="slideshow-btn">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </figure>
+            <div id="slideshowContainer-img">
+            
+            </div>   
+            <div id="slideshow-btn">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </section>
     </header>
     <main id="mainContainer">
@@ -52,10 +44,20 @@
                 <h2 id="trendingPreview-header--title">Trending</h2>
                 <button id="trendinPreview-header--btn">&#10095;</button>
             </div>
-
             <article class="trendingPreview-movieList">
-                
+
             </article>
+        </section>
+        <section id="liked" class="liked-container">
+          <div class="liked-header">
+            <h2>Favorite Movies</h2>
+          </div>
+          <article class="liked-movieList">
+            <div class="movieDetail-container">
+              <img src="" alt="" class="movie-img">
+            </div>
+          </article>
+
         </section>
         <section id="categoriesPreview" class="categoriesPreview-container">
             <h2 class="categoriesPreview-title">Categorías</h2>
@@ -72,24 +74,24 @@
         </section>
         <section id="movieDetail" class="movieDetail-container inactive">
             <div class="title-movie">
-              <h1 class="movieDetail-title">The Northman</h1> 
-              <span class="movieDetail-score">8.5</span>
+              <h1 class="movieDetail-title"></h1> 
+              <span class="movieDetail-score"></span>
 
             </div>
             <p class="movieDetail-description">
-                Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.
+                
             </p>
             <article class="categories-list">
                 <div class="category-container">
-                  <h3 id="id28" class="category-title">Romance</h3>
+                  <h3 id="id28" class="category-title"></h3>
                 </div>
           
                 <div class="category-container">
-                  <h3 id="id16" class="category-title">Horror</h3>
+                  <h3 id="id16" class="category-title"></h3>
                 </div>
           
                 <div class="category-container">
-                  <h3 id="id14" class="category-title">Action</h3>
+                  <h3 id="id14" class="category-title"></h3>
                 </div>
               </article>
           
@@ -97,30 +99,8 @@
                 <h2 class="relatedMovies-title">Similar Movies</h2>
           
                 <div class="relatedMovies-scrollContainer">
-                  <div class="movie-container">
-                    <img
-                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-                      class="movie-img"
-                      alt="Nombre de la película"
-                    />
-                  </div>
-                  
-                  <div class="movie-container">
-                    <img
-                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-                      class="movie-img"
-                      alt="Nombre de la película"
-                    />
-                  </div>
-                  
-                  <div class="movie-container">
-                    <img
-                      src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-                      class="movie-img"
-                      alt="Nombre de la película"
-                    />
-                  </div>
                 </div>
+
               </article>
         </section>
     </main>

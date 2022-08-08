@@ -13,7 +13,7 @@ const trendingMoviesPreviewList = document.querySelector('.trendingPreview-movie
 const categoriesPreviewList = document.querySelector('.categoriesPreview-list');
 const movieDetailCategoriesList = document.querySelector('#movieDetail .categories-list');
 const relatedMoviesContainer = document.querySelector('.relatedMovies-scrollContainer');
-
+const likedMoviesListArticle = document.querySelector('.liked-movieList')
 // Elements
 const longImg = document.querySelector('#long-img');
 const trendingPreviewLongList = document.querySelector('#trendingPreview-movieList-long');
@@ -22,10 +22,10 @@ const searchIcon =document.querySelector('#nav-searchbar--logo');
 const headerCategoryTitle = document.querySelector('.header-title--categoryView');
 const headerLogo = document.querySelector('#nav-logo');
 const arrowBtn = document.querySelector('#arrowbtn');
-
+const slishowContainer = document.querySelector('#slideshowContainer-img');
 const searchFormInput = document.querySelector('#nav-searchbar--input');
 const searchFormBtn = document.querySelector('#searchBtn');
-
+const contenedorlike = document.querySelector('.liked-container')
 const trendingBtn = document.querySelector('#trendinPreview-header--btn');
 
 const movieDetailTitle = document.querySelector('.movieDetail-title');
