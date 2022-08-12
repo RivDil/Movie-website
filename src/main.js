@@ -5,6 +5,7 @@ const api = axios.create({
     },
     params:{
         'api_key': API_KEY,
+        'language': navigator.language,
     }
 });
 
@@ -43,6 +44,10 @@ const lazyLoader = new IntersectionObserver((entries) => {
     })
 })
 
+language.addEventListener('click', () =>{
+    lang = language.value;
+    console.log(lang)
+})
 
 function createMovies(movies, container, clean = true){
     
@@ -328,3 +333,4 @@ function getLikedMovies(movie){
     createMovies(moviesArray,likedMoviesListArticle, true);
     console.log(likedMovies);
 }
+

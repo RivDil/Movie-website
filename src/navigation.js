@@ -14,11 +14,14 @@ searchFormBtn.addEventListener('click', () => {
     location.hash = '#search=' + searchFormInput.value;
 });
 
+
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 window.addEventListener('scroll',infiniteScroll,false);
 function navigator(){
     console.log({location});
+
+
 
     if(infiniteScroll){
         window.removeEventListener('scroll',infiniteScroll,{passive: false});
@@ -159,6 +162,7 @@ function navigator(){
 
             infiniteScroll = getPaginatedTrendingMovies;
         }
+
     location.hash
 }
 

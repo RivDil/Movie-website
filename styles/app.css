@@ -18,6 +18,12 @@ nav{
     font-size: 1.8rem;
     background-color: var(--purple-background);
 }
+#la{
+    border-radius: 20px;
+    font-size: 0.8rem;
+    width: 25%;
+
+}
 #nav-searchbar--input{
     width: 80%;
     margin: 20px 0 10px 20px;
